@@ -1,0 +1,75 @@
+*{
+    /* Polices et marges */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* Taille minimum du body */
+    min-width: 320px;
+    align-items: center;
+    justify-content: center;
+}
+html,body
+{
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+        @media screen and (max-width: 992px) {
+
+            /* Media queries pour les tablettes */
+
+           }
+    
+           @media screen and (max-width: 768px) {
+    
+            /* Media queries pour les smartphones jusqu'à 768 px */
+            header {
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                margin: auto;
+                padding-top: 25px;
+                padding-bottom: 6px;
+                box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 8px;
+                position: relative;
+
+
+            }
+            #logo {
+                width: 180px;
+            }
+
+            form {
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                color: rgb(37, 37, 37);
+                background-color: rgb(241, 241, 241);
+                font-size: 1.2em;
+                gap: 0.5em;
+            }
+
+            input {
+                /* Réglages CSS du texte input sur la recherche */
+                border: 0px;
+                background-color: rgb(241, 241, 241);
+                color: rgb(37, 37, 37);
+                font-weight: 700;
+                font-size: 0.9em;
+            }
+
+            ::placeholder {
+                color: rgb(37, 37, 37);
+                font-weight: 700;
+                font-size: 0.9em;
+            }
+
+            }
