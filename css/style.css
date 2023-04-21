@@ -214,6 +214,23 @@ html,body
                 flex-direction: column;
             }
 
+            .card__heart {
+                position: absolute;
+                background-color: #ffff;
+                transition: opacity 1000ms ease-in-out;
+            }
+
+            .card__heart:hover {
+                cursor: pointer;
+                opacity: 0%;
+            }
+
+            .card__heart--pink {
+                background: linear-gradient(#ff79da, #9356dc);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
             .footer__container {
                 display: flex;
                 flex-direction: column;
