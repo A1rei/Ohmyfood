@@ -22,6 +22,10 @@ html, body {
   padding: 0px;
 }
 
+.fa-1x {
+  font-size: 1.5em;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -74,6 +78,18 @@ html, body {
     box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 8px;
     position: relative;
   }
+  .headerback {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .headerback__arrow {
+    position: absolute;
+    left: 1em;
+    top: 1.5em;
+    font-size: 1.3em;
+    color: #353535;
+  }
   #logo {
     width: 180px;
   }
@@ -82,12 +98,14 @@ html, body {
     margin-bottom: 1em;
   }
   form {
-    text-align: end;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     color: #353535;
     background-color: #eaeaea;
     font-size: 1.2em;
+  }
+  form div {
+    text-align: center;
   }
   input {
     /* Réglages CSS du texte input sur la recherche */
@@ -96,6 +114,7 @@ html, body {
     color: #353535;
     font-weight: 700;
     font-size: 0.9em;
+    text-align: center;
   }
   ::-moz-placeholder {
     color: #353535;
@@ -138,8 +157,8 @@ html, body {
     font-weight: 600;
   }
   .explore .button:hover {
-    background: linear-gradient(to bottom, #dd6fdb 5%, #a55cdc 100%);
-    background-color: #a55cdc;
+    background: linear-gradient(to bottom, #C57AE1 5%, #B274E1 100%);
+    background-color: #C57AE1;
   }
   .explore .button:active {
     position: relative;
@@ -201,6 +220,77 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 2em;
+  }
+  .restaurants__img {
+    height: 9em;
+    width: 100%;
+    border: 0 solid transparent;
+    box-shadow: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 1;
+  }
+  .restaurants__inside {
+    background-color: #F6F6F6;
+    margin-top: -50px;
+    padding: 1em;
+    border-radius: 2em 2em 0 0;
+    z-index: 2;
+    position: relative;
+    margin-bottom: -2em;
+  }
+  .restaurants__type {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.9em;
+    position: relative;
+    padding-bottom: 0.25em;
+  }
+  .restaurants__type::after {
+    content: "";
+    position: absolute;
+    height: 0.15em;
+    width: 2em;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .restaurants__bigtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .restaurants__smalltitle {
+    font-family: "Shrikhand";
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .restaurants__meal {
+    background-color: #FFFFFF;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em 1em 1em 1em;
+    font-size: 0.9em;
+    font-weight: 100;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  }
+  .meal__title {
+    font-weight: 600;
+  }
+  .meal__subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.4em;
+    font-size: 0.8em;
+  }
+  .meal__span {
+    font-size: 0.9em;
+    font-weight: 600;
   }
   .card {
     display: flex;
