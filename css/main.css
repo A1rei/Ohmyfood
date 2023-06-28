@@ -502,6 +502,7 @@ input {
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
+    flex-wrap: wrap;
   }
   .guide__block {
     padding: 1.5em;

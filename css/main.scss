@@ -554,6 +554,7 @@ input {
                     padding: 0;
                     list-style: none;
                     counter-reset: compteListe;
+                    flex-wrap: wrap;
                 }
 
                 &__block {
